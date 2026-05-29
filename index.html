@@ -6,12 +6,69 @@
 			
 			.view {
 				
-				width: calc(100vh + 10px);
-				height: calc(100vh + 10px);
+				width: 100vh;
+				height: 100vh;
 				
-				margin-left: calc(50vw - 50vh);
+				margin-left: calc(50vw - 50vh - 8px);
+				margin-top: -8px;
 				
-				background: rgb(200, 200, 200);
+				background: black;
+				
+				color: white;
+				
+				font-family: Montserrat Regular;
+				font-size: 5vh;
+				
+				border-radius: 100%;
+				text-align: center;
+				
+				overflow-y: scroll;
+				
+				scrollbar-color: rgba(0, 0, 0, 0) rgba(0, 255, 255, 0);
+				
+				position: fixed;
+				
+			}
+			
+			a {
+				color: white;
+			}
+			
+			p, h1, h2, h3 {
+			
+				width: 75vh;
+				margin-left: 12.5vh;
+				
+			}
+			
+			h1, p, br, hr {
+				
+				animation-timeline: view();
+				animation-name: scaleUpFromBottom;
+
+				animation-range: entry 0% contain 30%;
+				
+				animation-fill-mode: both; 
+				
+			}
+			
+			hr {
+				
+				border-style: solid;
+				border-color: rgb(80, 80, 80);
+				
+				width: 70vh;
+				
+			}
+			
+			@keyframes scaleUpFromBottom {
+
+				from {
+					transform: scale(0.4);
+				}
+				to {
+					transform: scale(1);
+				}
 				
 			}
 			
@@ -22,6 +79,18 @@
 	<body>
 		
 		<div class="view">
+			
+			<br><br>
+			
+			<h2>AI chatbots could be making you stupider</h1>
+			
+			<hr>
+			
+			<p>
+			The concern that researchers like Kosmyna have is that if we become too reliant on AI, it could affect the language we use and even our ability to do basic cognitive tasks. There is now a growing body of research suggesting that this "cognitive offloading" to AI can have a corrosive effect on our mental abilities. The consequences could be alarming and may even contribute to cognitive decline.
+			</p>
+			
+			<br><br>
 			
 		</div>
 		
