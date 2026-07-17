@@ -27,7 +27,16 @@
 	
 	<body>
 		
-		<h1 style="margin-top: 45vh; margin-left: 43vw;">Hellso. </h1>
+		<h1 style="margin-top: 45vh; margin-left: 43vw;" id="a">Hello. </h1>
+		
+		<script>
+			
+			setInterval(function() {
+				
+				document.getElementById("a").innerHTML = top.innerWidth + "x" + top.innerHeight
+			}, 33);
+			
+		</script>
 		
 	</body>
 	
