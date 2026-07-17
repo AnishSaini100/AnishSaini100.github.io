@@ -5,17 +5,25 @@
 		<style>
 			
 			html, body {
+				overflow: hidden;		
+			}
+			
+			.main {
 				
 				background: black;
 				
-				overflow: hidden;
+				width: 25vh;
+				height: 25vh;
+				
+				overflow-x: hidden;
+				overflow-y: scroll;
 				
 			}
 			
-			h1 {
+			p {
 				
 				font-family: Arial;
-				font-size: 10vh;
+				font-size: 1vw;
 				
 				color: white;
 				
@@ -27,14 +35,28 @@
 	
 	<body>
 		
-		<h1 id="a">Hello. </h1>
+		<div class="main">
+			
+			<p>1</p>
+			<p>2</p>
+			<p>3</p>
+			<p>4</p>
+			<p>5</p>
+			<p>6</p>
+			<p>7</p>
+			<p>8</p>
+			<p>9</p>
+			<p>10</p>
+			<p>11</p>
+			<p>12</p>
+			<p>13</p>
+			<p>14</p>
+			<p>15</p>
+			<p>16</p>
+			
+		</div>
 		
 		<script>
-			
-			setInterval(function() {
-				
-				document.getElementById("a").innerHTML = top.innerWidth + "x" + top.innerHeight
-			}, 33);
 			
 		</script>
 		
