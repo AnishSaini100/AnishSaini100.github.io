@@ -9,7 +9,7 @@
 				
 				margin-top: 0px;
 				margin-left: 0px;
-					
+				
 			}
 			
 			.main {
@@ -38,7 +38,7 @@
 			
 			p, h1 {
 							
-				font-family: Arial;				
+				font-family: Roboto;				
 				color: white;
 				
 				margin-left: 1vw;
@@ -82,7 +82,18 @@
 			
 				const d = new Date();
 				
-				document.getElementById("time").innerHTML = d.getHours() + ":" + d.getMinutes();
+				var hh = d.getHours();
+				var mm = d.getMinutes();
+				
+				if(d.getHours() < 10) {
+					hh = "0" + d.getHours();
+				}
+				
+				if(d.getMinutes() < 10) {
+					mm = "0" + d.getMinutes();
+				}
+				
+				document.getElementById("time").innerHTML = hh + ":" + mm;
 				
 			}, 33)
 			
